@@ -1,0 +1,75 @@
+body {
+    background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Inter', sans-serif;
+    color: white;
+    justify-content: stretch;
+}
+
+nav {
+    font-weight: 200;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-direction: row;
+}
+
+nav .head {
+    margin: 0px 80px;
+    font-size: 16px;
+    transition: .5s ease;
+    cursor: pointer;
+    letter-spacing: 1.5px;
+}
+
+nav .head:hover {
+    color: rgb(68, 90, 192);
+}
+
+nav .active {
+    color: rgb(114, 205, 244);
+}
+
+.dots-box {
+    display: flex;
+    width: 10%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 80px;
+}
+
+.dots-box .dots {
+    cursor: pointer;
+    margin-bottom: 16px;
+    transition: .5s ease;
+}
+
+.dots-box .dots:hover {
+    color: rgb(68, 90, 192);
+}
+
+.name {
+    width: 95%;
+    display: flex;
+    margin-top: 20px;
+    height: 90px;
+    align-items: center;
+    padding-left: 80px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.illustrator {
+    margin-top: 10px;
+    color: #ffffffa3;
+    margin-left: 80px;
+    font-size: 30px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
