@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- COPY STYLE LINKS -->
+    <link rel="stylesheet" href="scrollbar.css">
+    <link rel="stylesheet" href="nav.css">
+    <!-- END -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Harley Salinas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <title>harley | Home</title>
 </head>
 <body>
-    
-    <nav>
-        <div class="head home active" onclick="openLink('#');">HOME</div>
-        <div class="head about" onclick="openLink('about.html');">ABOUT</div>
-        <div class="head commission">COMMISSION</div>
-        <div class="head contact">CONTACT</div>
-    </nav>
-    <div class="dots-box"><div class="dots">...</div></div>
+    <div class="nav">
+        <img src="res/logo.svg" alt="logo" style="width: 8%;">
+        <p class="home active">HOME</p>
+        <p class="portfolio">PORTFOLIO</p>
+        <p class="about">ABOUT</p>
+        <p class="commissions">COMMISSIONS</p>
+        <p class="contact">CONTACT</p>
+    </div>
 
-    <div class="name">Harley Salinas</div>
-    <div class="illustrator">ILLUSTRATOR</div>
+    <div class="intro">
+        <p style="font-size: 22.9px;">
+            <b style="font-size: 35.2px;">Animator, <br>Graphic Designer, and Illustrator.</b>
+        <br>
+            <i>Harley Salinas</i> is a Digital Arts student hailing from the Philippines.
+        <br>
+            <u style="font-size: 13.2px;">Learn more</u>
+        </p>
+    </div>
 
     <div class="gallery">
-        
+        <img class="art" src="res/a_1.jpg" alt="cat" data-title="Window cat" data-date="2024" data-medium="Infinite Painter(Digital)">
+        <img class="art" src="res/a_2.jpg" alt="student" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_3.jpg" alt="garden" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_4.jpg" alt="sword" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_5.jpg" alt="kitchen" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_6.jpg" alt="apt" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_7.jpg" alt="snake" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_8.jpg" alt="bear" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_9.jpg" alt="ny" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_10.jpg" alt="bike" data-title="" data-date="" data-medium="">
+        <img class="art" src="res/a_11.jpg" alt="afternoon" data-title="" data-date="" data-medium="">
+   </div>
+
+   <div id="popup" class="popup" style="display: none;">
+        <div class="popup-content">
+            <img id="popup-img" src="" alt="Popup Image">
+            <div class="texts">
+                <h2 id="popup-title"></h2>
+                <p id="popup-date"></p>
+                <p id="popup-medium"></p>
+            </div>
+            <span id="close-popup">&times;</span>
+        </div>
     </div>
-    
+
     <script src="script.js"></script>
 </body>
 </html>

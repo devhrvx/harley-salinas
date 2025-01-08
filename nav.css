@@ -1,0 +1,13 @@
+.nav {
+    display: flex;
+    width: 80vw;
+    height: 13vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px;
+}
+
+.active {
+    color: #0d0dc6;
+}
