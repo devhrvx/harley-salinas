@@ -17,11 +17,11 @@
 <body>
     <div class="nav">
         <img src="res/logo.svg" alt="logo" style="width: 8%;">
-        <p class="home active">HOME</p>
-        <p class="portfolio">PORTFOLIO</p>
-        <p class="about">ABOUT</p>
-        <p class="commissions">COMMISSIONS</p>
-        <p class="contact">CONTACT</p>
+        <p class="item home active">HOME</p>
+        <p class="item portfolio">PORTFOLIO</p>
+        <p class="item about">ABOUT</p>
+        <p class="item commissions">COMMISSIONS</p>
+        <p class="item contact">CONTACT</p>
     </div>
 
     <div class="intro">
@@ -30,7 +30,7 @@
         <br>
             <i>Harley Salinas</i> is a Digital Arts student hailing from the Philippines.
         <br>
-            <u style="font-size: 13.2px;">Learn more</u>
+            <u class="u">Learn more</u>
         </p>
     </div>
 
@@ -48,6 +48,7 @@
         <img class="art" src="res/a_11.jpg" alt="afternoon" data-title="" data-date="" data-medium="">
    </div>
 
+
    <div id="popup" class="popup" style="display: none;">
         <div class="popup-content">
             <img id="popup-img" src="" alt="Popup Image">
@@ -58,6 +59,28 @@
             </div>
             <span id="close-popup">&times;</span>
         </div>
+    </div>
+
+    <u class="u" style="width: fit-content; height: fit-content; margin-left: 85vw;">View Portfolio</u>
+
+    <div class="up" style="display: none;">
+        <!-- up button -->
+    </div>
+
+    <div class="copyright" style="margin-top: 4vh; margin-bottom: 4vh;">
+        <p class="grey">© Harley Salinas</p>
+        <p class="grey">2025</p>
+    </div>
+
+    <div class="footer">
+        <div class="socials">
+            <div class="item" style="background-image: url('res/ig_logo.svg');" onclick="window.open('https://', '_blank').focus()"></div>
+            <div class="item" style="background-image: url('res/fb_logo.svg');" onclick="window.open('https://', '_blank').focus()"></div>
+            <div class="item" style="background-image: url('res/li_logo.svg');" onclick="window.open('https://', '_blank').focus()"></div>
+            <div class="item" style="background-image: url('res/x_logo.svg');" onclick="window.open('https://', '_blank').focus()"></div>
+            <div class="item" style="background-image: url('res/email_logo.svg');" onclick="window.open('https://', '_blank').focus()"></div>
+        </div>
+        <div class="developer"><p class="grey" style="user-select: none;">Developed by: <span style="cursor: pointer;" onclick="window.open('https://hrvx.dev', '_blank').focus()">John Harvey Salinas</span></p></div>
     </div>
 
     <script src="script.js"></script>

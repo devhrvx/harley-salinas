@@ -1,8 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-    background: #f0f7ff;
+    background: #f7fbff;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .intro {
@@ -27,6 +28,7 @@ body {
     margin: 3vw 5vw;
     height: fit-content;
     overflow: hidden;
+    margin-bottom: .5vw;
 }
 
 .gallery img {
@@ -88,6 +90,82 @@ body {
     transition: color .3s ease;
 }
 
-#close-popup:hover {
+#close-popup:hover, .u:hover {
     color: #0d0dc6;
+}
+
+.u {
+    font-size: 13.2px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+
+.up {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    bottom: 8vh;
+    right: 2vw;
+    background-image: url('res/toUp.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .3s ease;
+}
+
+.up:hover {
+    transform: scale(1.09);
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 0 auto;
+}
+
+.grey {
+    color: #9597a9;
+    font-size: 13.2px;
+    margin: 0;
+}
+
+.footer {
+    width: 96%;
+    padding: 2vh 2% 5vh 2%;
+    height: 18vh;
+    background: #f0f7ff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.socials {
+    width: 99%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.developer {
+    width: fit-content;
+    height: 5vh;
+}
+
+.item {
+    height: 40px;
+    width: 40px;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }

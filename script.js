@@ -29,3 +29,20 @@ $(document).ready(function () {
         }
     });
 });
+
+$(window).on('scroll', () => {
+    const scrollBottom = $(window).scrollTop() + $(window).height();
+    const documentHeight = $(document).height();
+
+    if (scrollBottom >= documentHeight) {
+        console.log('Element .toTop show');
+        $('.up').show();
+    }
+    else {
+        $('.up').hide();
+    }
+});
+
+$('.up').click(function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});

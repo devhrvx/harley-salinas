@@ -8,6 +8,11 @@
     font-size: 14px;
 }
 
-.active {
+.active, .item:hover {
     color: #0d0dc6;
+}
+
+.item {
+    cursor: pointer;
+    transition: color .3s ease;
 }
