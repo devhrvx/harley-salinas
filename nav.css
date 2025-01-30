@@ -1,11 +1,12 @@
 .nav {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     height: 13vh;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     font-size: 14px;
+    background: #f0f7ff;
 }
 
 .active, .item:hover {
